@@ -1,4 +1,4 @@
-public class Rectangle {
+public class Rectangle extends Shape{
 
     public double width;
     public double length;
@@ -10,5 +10,9 @@ public class Rectangle {
 
     public double calculateArea(){
         return width * length;
+    }
+
+    public boolean checkSquare(){
+        return (width == length);
     }
 }
